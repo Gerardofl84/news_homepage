@@ -5,52 +5,159 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Gerardo_Franco">
     <meta name="description" content="The future of the web">
-    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="icon" href="/images/favicon-32x32.png">
     <title>News homepage</title>
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link 
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap"
+      rel="stylesheet"
+    >
     <link rel="stylesheet" href="/css/style.css">
   </head>
   <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
-    Home
-    New
-    Popular
-    Trending
-    Categories
+    <header>
+      <nav class="nav container">
+        <a href="index.html" class="nav__logo__link">
+          <img src="/images/logo.svg" alt="logo" class="nav__logo">
+        </a>
 
-    The Bright Future of Web 3.0?
-
-    We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
-    But is it really fulfilling its promise?
-
-    Read more
-
-    New 
-
-    Hydrogen VS Electric Cars
-    Will hydrogen-fueled cars ever catch up to EVs?
-
-    The Downsides of AI Artistry
-    What are the possible adverse effects of on-demand AI image generation?
-
-    Is VC Funding Drying Up?
-    Private funding by VC firms is down 50% YOY. We take a look at what that means.
-
-    01
-    Reviving Retro PCs
-    What happens when old PCs are given modern upgrades?
-
-    02
-    Top 10 Laptops of 2022
-    Our best picks for various needs and budgets.
-
-    03
-    The Growth of Gaming
-    How the pandemic has sparked fresh opportunities.
-    <div class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="https://www.gerardo-franco.dev/" target="_blank">Gerardo Franco</a>.
-    </div>
+        <button 
+          class="mobile-nav-toggle"
+          aria-controls="primary-navigation"
+          aria-expanded="false"
+        >
+          <span class="sr-only">
+           
+          </span>
+        </button>
+        
+        <ul id="primary-navigation" class="primary-navigation flex" data-visible="false">
+          
+          <li class="active nav__list">
+            <a href="index.html" class="nav__link">Home</a>
+          </li>
+          
+          <li class="nav__list">
+            <a href="#" class="nav__link">New</a>
+          </li>
+          
+          <li class="nav__list">
+            <a href="#" class="nav__link">Popular</a>
+          </li>
+          
+          <li class="nav__list">
+            <a href="#" class="nav__link">Trending</a>
+          </li>
+           
+          <li class="nav__list">
+            <a href="#" class="nav__link">Categories</a>
+          </li>
+        </ul>
+      </nav>
+   </header>
+    <main>
+       
+      <div class="intro-grid container">
+        <!-- intro-section -->
+        <img src="/images/image-web-3-mobile.jpg" alt="geometric figures" class="intro__img">
+        <img src="/images/image-web-3-desktop.jpg" alt="geometric figures" class="intro__img-2">
+        <h1 class="intro__title">The Bright Future of Web 3.0?</h1>
+        <div class="intro__div">
+          <p class="intro__info">
+            We dive into the next evolution of the web that claims to put the power of the
+            platforms back into the hands of the people. But is it really fulfilling its promise?
+          </p>
+          <a href="#" class="btn">read more</a>
+        </div>
+        <!-- /intro-section -->
+        
+        
+        <!-- new-section -->
+        <div class="new-flex">
+        
+          <h2 class="new__title">New</h2>
+          
+          <!--hydrogen vs electric-->
+          <div class="new__div">
+            <h3 class="new__subtitle">
+              <a href="#" class="new__link">Hydrogen VS Electric Cars</a>
+            </h3>
+            <p class="new__info">
+              Will hydrogen-fueled cars ever catch up to EVs?
+            </p>
+          </div>
+          
+          <!--The downside of ai artistry-->
+          <div class="new__div">
+            <h3 class="new__subtitle">
+              <a href="#" class="new__link">The Downsides of AI Artistry</a>
+            </h3>
+            <p class="new__info">
+              What are the possible adverse effects of on-demand AI image generation?
+            </p>
+          </div>
+          
+          <!--is vs funding drying up?-->
+          <div class="new__div">
+            <h3 class="new__subtitle">
+              <a href="#" class="new__link">Is VC Funding Drying Up?</a>
+            </h3>
+            <p class="new__info">
+              Private funding by VC firms is down 50% YOY.
+              We take a look #iat what that means.
+            </p>
+          </div>
+        
+        </div>
+        <!-- / new-section -->
+        
+      </div> <!-- / intro-grid -->
+      
+      <div class="blog-grid container">
+        
+        <!--reviving retro pcs-->
+        <div class="blog__inside-grid">
+          <img src="/images/image-retro-pcs.jpg" alt="retro pc" class="blog__img">
+          <h2 class="blog__number">01</h2>
+          <h3 class="blog__title">Reviving Retro PCs</h3>
+          <p class="blog__info">
+            What happens when old PCs are given modern upgrades?
+          </p>
+        </div>
+        
+        <!--top 10 laptops of 2022-->
+        <div class="blog__inside-grid">
+          <img src="/images/image-top-laptops.jpg" alt="retro pc" class="blog__img">
+          <h2 class="blog__number">02</h2>
+          <h3 class="blog__title">Top 10 Laptops of 2022</h3>
+          <p class="blog__info">
+            Our best picks for various needs and budgets.
+          </p>
+        </div>
+        
+        <!--the growth of gaming-->
+        <div class="blog__inside-grid">
+          <img src="/images/image-gaming-growth.jpg" alt="retro pc" class="blog__img">
+          <h2 class="blog__number">03</h2>
+          <h3 class="blog__title">The Growth of Gaming</h3>
+          <p class="blog__info">
+            How the pandemic has sparked fresh opportunities.
+          </p>
+        </div>
+      </div>
+      
+    </main>
+    <footer>
+      <!--footer-section-->
+      <div class="attribution">
+      <p>
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">
+          Frontend Mentor</a>.
+        <br>
+        Coded by <a href="https://www.gerardo-franco.dev/" target="_blank">Gerardo Franco</a>.
+      </p>
+      </div>
+    </footer>
+    <script src="/js/app.js"></script>
   </body>
 </html>
